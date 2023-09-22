@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230922 19:47:32.640" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon Testes" source="c:\Users\vitor\OneDrive\Documentos\Curso Udemy\RobotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de Teste 03 - Adicionar e Remover o Produto do Carrinho" line="26">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230922 19:47:32.967" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230922 19:47:32.967" endtime="20230922 19:47:35.200"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230922 19:47:35.200" endtime="20230922 19:47:35.322"/>
+</kw>
+<status status="PASS" starttime="20230922 19:47:32.954" endtime="20230922 19:47:35.323"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" library="amazon_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230922 19:47:35.325" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<status status="PASS" starttime="20230922 19:47:35.324" endtime="20230922 19:47:38.404"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Menu_Eletronicos}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230922 19:47:38.405" endtime="20230922 19:47:38.727"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:47:43.728" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:47:38.727" endtime="20230922 19:47:43.729"/>
+</kw>
+<status status="PASS" starttime="20230922 19:47:35.324" endtime="20230922 19:47:43.730"/>
+</kw>
+<kw name="Entrar no menu &quot;Login&quot;" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(@data-nav-ref,'nav_ya_signin')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:47:43.740" level="INFO">Clicking element '//a[contains(@data-nav-ref,'nav_ya_signin')]'.</msg>
+<status status="PASS" starttime="20230922 19:47:43.738" endtime="20230922 19:47:44.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:47:49.110" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:47:44.109" endtime="20230922 19:47:49.110"/>
+</kw>
+<status status="PASS" starttime="20230922 19:47:43.736" endtime="20230922 19:47:49.110"/>
+</kw>
+<kw name="Digitar o e-mail no campo de login" library="amazon_resources">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//input[@type='email'][contains(@id,'email')]</arg>
+<arg>text=vi.marketingdigital23@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230922 19:47:49.110" level="INFO">Typing text 'vi.marketingdigital23@gmail.com' into text field '//input[@type='email'][contains(@id,'email')]'.</msg>
+<status status="PASS" starttime="20230922 19:47:49.110" endtime="20230922 19:47:49.305"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:47:54.305" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:47:49.305" endtime="20230922 19:47:54.305"/>
+</kw>
+<status status="PASS" starttime="20230922 19:47:49.110" endtime="20230922 19:47:54.305"/>
+</kw>
+<kw name="Clicar no botão continuar" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//input[contains(@tabindex,'5')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:47:54.305" level="INFO">Clicking element '//input[contains(@tabindex,'5')]'.</msg>
+<status status="PASS" starttime="20230922 19:47:54.305" endtime="20230922 19:47:55.167"/>
+</kw>
+<status status="PASS" starttime="20230922 19:47:54.305" endtime="20230922 19:47:55.171"/>
+</kw>
+<kw name="Digitar a senha no campo de login" library="amazon_resources">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>locator=//input[@name='password']</arg>
+<arg>password=123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230922 19:47:55.177" level="INFO">Typing password into text field '//input[@name='password']'.</msg>
+<msg timestamp="20230922 19:47:55.231" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230922 19:47:55.280" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230922 19:47:55.176" endtime="20230922 19:47:55.280"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:00.281" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:47:55.280" endtime="20230922 19:48:00.281"/>
+</kw>
+<status status="PASS" starttime="20230922 19:47:55.176" endtime="20230922 19:48:00.282"/>
+</kw>
+<kw name="Clicar no botão fazer login" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//input[contains(@tabindex,'3')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:00.286" level="INFO">Clicking element '//input[contains(@tabindex,'3')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:00.284" endtime="20230922 19:48:00.395"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:05.397" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:48:00.396" endtime="20230922 19:48:05.397"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:00.283" endtime="20230922 19:48:05.399"/>
+</kw>
+<kw name="Digitar no Campo de pesquisa &quot;Controle Sem Fio Xbox + Cabo USB&quot;" library="amazon_resources">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//input[contains(@type,'text')]</arg>
+<arg>text=Controle Sem Fio Xbox + Cabo USB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:05.407" level="INFO">Typing text 'Controle Sem Fio Xbox + Cabo USB' into text field '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:05.402" endtime="20230922 19:48:05.804"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:05.401" endtime="20230922 19:48:05.805"/>
+</kw>
+<kw name="Clicar no botão pesquisa" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//input[@value='Ir']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:05.809" level="INFO">Clicking element '//input[@value='Ir']'.</msg>
+<status status="PASS" starttime="20230922 19:48:05.807" endtime="20230922 19:48:07.852"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:12.855" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:48:07.853" endtime="20230922 19:48:12.855"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:05.805" endtime="20230922 19:48:12.855"/>
+</kw>
+<kw name="Clicar na imagem do produto &quot;Controle Sem Fio Xbox + Cabo USB&quot;" library="amazon_resources">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>locator=//img[contains(@alt,'Controle Sem Fio Xbox + Cabo USB')]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:12.863" level="INFO">Clicking image '//img[contains(@alt,'Controle Sem Fio Xbox + Cabo USB')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:12.863" endtime="20230922 19:48:17.071"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:22.073" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:48:17.071" endtime="20230922 19:48:22.073"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:12.855" endtime="20230922 19:48:22.073"/>
+</kw>
+<kw name="Adicionar o produto &quot;Controle Sem Fio Xbox + Cabo USB&quot; no carrinho" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//input[contains(@value,'Adicionar ao carrinho')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:22.073" level="INFO">Clicking element '//input[contains(@value,'Adicionar ao carrinho')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:22.073" endtime="20230922 19:48:23.811"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:28.813" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:48:23.811" endtime="20230922 19:48:28.813"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:22.073" endtime="20230922 19:48:28.813"/>
+</kw>
+<kw name="O produto &quot;Controle Sem Fio Xbox + Cabo USB&quot; deve ser mostrado no carrinho" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(@data-csa-c-type,'button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:28.818" level="INFO">Clicking element '//a[contains(@data-csa-c-type,'button')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:28.818" endtime="20230922 19:48:29.824"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:34.825" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:48:29.824" endtime="20230922 19:48:34.825"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:28.818" endtime="20230922 19:48:34.825"/>
+</kw>
+<kw name="Clicar em remover o produto &quot;Controle Sem Fio Xbox + Cabo USB&quot; do carrinho" library="amazon_resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//input[contains(@value,'Excluir')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:34.825" level="INFO">Clicking button '//input[contains(@value,'Excluir')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:34.825" endtime="20230922 19:48:34.983"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230922 19:48:39.987" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230922 19:48:34.983" endtime="20230922 19:48:39.989"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:34.825" endtime="20230922 19:48:39.990"/>
+</kw>
+<kw name="O carrinho deve ficar vazio" library="amazon_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//span[@class='a-size-medium sc-number-of-items'][contains(.,'Subtotal (0 produtos):')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230922 19:48:39.990" level="INFO">Clicking element '//span[@class='a-size-medium sc-number-of-items'][contains(.,'Subtotal (0 produtos):')]'.</msg>
+<status status="PASS" starttime="20230922 19:48:39.990" endtime="20230922 19:48:40.085"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:39.990" endtime="20230922 19:48:40.086"/>
+</kw>
+<kw name="Fechar o navegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230922 19:48:40.356" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-116.png"&gt;&lt;img src="selenium-screenshot-116.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230922 19:48:40.090" endtime="20230922 19:48:40.356"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230922 19:48:40.357" endtime="20230922 19:48:42.670"/>
+</kw>
+<status status="PASS" starttime="20230922 19:48:40.090" endtime="20230922 19:48:42.670"/>
+</kw>
+<doc>Esse teste verifica a adição e remoção de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<tag>remover_carrinho</tag>
+<status status="PASS" starttime="20230922 19:47:32.938" endtime="20230922 19:48:42.670"/>
+</test>
+<doc>Essa suite testa o site da amazon.com.br</doc>
+<status status="PASS" starttime="20230922 19:47:32.647" endtime="20230922 19:48:42.679"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">adicionar_carrinho</stat>
+<stat pass="1" fail="0" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon Testes">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
